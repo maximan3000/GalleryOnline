@@ -1,0 +1,21 @@
+.manage-div {
+	margin: auto;
+	width: 100px;
+	height: 40px;
+}
+
+.element-manage-div {
+	padding: 5px;
+	float: left;
+	width: 35px;
+	height: 30px;
+	margin: auto; 
+}
+.element-manage-div button,img {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+.element-manage-div:hover {
+	opacity: 0.5;
+}

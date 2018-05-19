@@ -1,6 +1,38 @@
-.panel {
-	width: 500px;
+.gallery-online-background {
+	width: 400px;
+	margin: auto;
+}
+
+.gallery-online-content-div{
+	width: 300px;
 	height: 300px;
+	min-width: 100px;
+	margin: auto;
+}
+.gallery-online-content-div img{
+	width: inherit;
+	height: inherit;
+}
+
+.gallery-online-navigate-div{
+	display: flex;
 	overflow-x: scroll;
-	white-space: nowrap;
+	overflow-y: hidden; 
+	padding: 5px; 
+	width:300px;
+	min-width: 100px;
+	height:100px;
+	margin: auto;
+}
+
+@media screen and (max-width: 440px) {
+	.gallery-online-background {
+		width: auto;
+	}
+}
+
+@media screen and (max-height: 440px) {
+	.gallery-online-background {
+		height: auto;
+	}
 }

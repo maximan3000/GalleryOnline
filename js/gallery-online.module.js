@@ -1,3 +1,6 @@
 'use strict';
 
-var myApp = angular.module("galleryOnline", ["photoReview"]);
+var myApp = angular.module("galleryOnline", [
+	"photoReview", 
+	"manageBlock"
+]);
