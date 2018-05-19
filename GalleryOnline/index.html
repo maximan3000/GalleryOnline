@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .manage-div {
+        top: 2%;
+        left: 2%;
+        right: 2%;
+        margin-bottom:5px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .delete-div {
+        align-items: center;
+        align-content: center;
+        width:45%;
+        height:5%;
+    }
+    .content-div{
+        left:5%;
+        right:5%;
+        top: 10%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        overflow: auto;
+    }
+    .navigate-div{
+        overflow-x: scroll; /* Добавляем полосу прокрутки */
+        padding: 5px; /* Поля вокруг текста */
+        white-space: nowrap; /* Запрещаем перенос строк */
+        width:150px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        overflow: auto;
+        margin: auto;
+    }
+    .navigate-elem{
+
+        margin-top:7px;
+        margin-left:5px;
+        margin-right:5px;
+        width:70px;
+        heigth:70px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Online Gallery</title>
+</head>
+<body>
+<div class = "manage-div">
+    <div class = "delete-div">
+        <button><img src="add.jpg" alt="delete-pic"
+                     style="vertical-align: middle">Add</button>
+    </div>
+    <div class = "add-div">
+        <button><img src="delete.png" alt="add-pic"
+                     style="vertical-align: middle">Delete</button>
+    </div>
+</div>
+<div class="content-div">
+    <img class = "main-image" src="http://www.rosphoto.com/images/u/articles/1510/4_8.jpg" alt="Some test photo">
+</div>
+<div class = "navigate-div">
+    <img class = "navigate-elem" src="http://www.rosphoto.com/images/u/articles/1510/4_8.jpg" alt="Some test photo">
+    <img class = "navigate-elem" src="http://www.rosphoto.com/images/u/articles/1510/4_8.jpg" alt="Some test photo">
+    <img class = "navigate-elem" src="http://www.rosphoto.com/images/u/articles/1510/4_8.jpg" alt="Some test photo">
+    <img class = "navigate-elem" src="http://www.rosphoto.com/images/u/articles/1510/4_8.jpg" alt="Some test photo">
+</div>
+</body>
+</html>
