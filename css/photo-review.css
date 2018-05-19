@@ -1,0 +1,18 @@
+.photo-review {
+	display: block;
+	float: left;
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	padding: 10px;
+}
+
+.photo-review img {
+	display: block;
+	width: inherit;
+	height: inherit;
+}
+
+.photo-review img:hover {
+	opacity: 0.5;
+}

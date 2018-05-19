@@ -1,0 +1,6 @@
+.panel {
+	width: 500px;
+	height: 300px;
+	overflow-x: scroll;
+	white-space: nowrap;
+}
