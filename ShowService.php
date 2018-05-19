@@ -7,4 +7,4 @@ foreach ($files as $key => $photoname){
         $answer[]=$dir.$photoname;
     };
 }
-return $answer;
+return json_encode( $answer);
