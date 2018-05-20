@@ -1,7 +1,7 @@
 .photo-review-navigate-div{
 	margin: auto;
 	display: flex;
-	overflow-x: scroll;
+	overflow-x: auto;
 	overflow-y: hidden; 
 	padding: 5px;
 	min-width: 100px;
