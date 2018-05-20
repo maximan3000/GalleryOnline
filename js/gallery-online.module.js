@@ -2,5 +2,7 @@
 
 var myApp = angular.module("galleryOnline", [
 	"photoReview", 
-	"manageBlock"
+	"manageBlock",
+	"addFileDialog",
+	"verifyActionDialog"
 ]);

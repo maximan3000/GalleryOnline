@@ -1,3 +1,8 @@
-<div class="photo-review">
-	<img ng-src="{{photoUrl}}" alt="Some test photo" ng-click="clickPhoto(photoUrl)"></img>
+<div class = "photo-review-navigate-div">
+	<div class="photo-review-navigate-div-container">
+		<div ng-repeat="photo in photoArr" class="photo-review">
+			<img ng-src="{{photo.URL}}" alt="{{photo.Name}}" ng-click="clickPhoto(photo.URL, photo.Name)"></img>
+		</div>
+	</div>
 </div>
+

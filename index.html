@@ -7,28 +7,36 @@
 	<link rel="stylesheet" type="text/css" href="css/gallery-online.css">
 	<link rel="stylesheet" type="text/css" href="manage-block/manage-block.css">
 	<link rel="stylesheet" type="text/css" href="photo-review/photo-review.css">
+	<link rel="stylesheet" type="text/css" href="add-file-dialog/add-file-dialog.css">
+	<link rel="stylesheet" type="text/css" href="verify-action-dialog/verify-action-dialog.css">
 
 	<script src="js/angular.min.js"></script>
 	<script src="manage-block/manage-block.module.js"></script>
 	<script src="manage-block/manage-block.component.js"></script>
 	<script src="photo-review/photo-review.module.js"></script>
 	<script src="photo-review/photo-review.component.js"></script>
+	<script src="add-file-dialog/add-file-dialog.module.js"></script>
+	<script src="add-file-dialog/add-file-dialog.component.js"></script>
+	<script src="verify-action-dialog/verify-action-dialog.module.js"></script>
+	<script src="verify-action-dialog/verify-action-dialog.component.js"></script>
 	<script src="js/gallery-online.module.js"></script>
 	<script src="js/gallery-online.controller.js"></script>
 </head>
 <body ng-controller="GalleryOnlineController">
 
+
+
+
+<div class="gallery-online-div-background" ng-class="backGround"></div>
+<add-file-dialog ng-class="displayFileDialog"></add-file-dialog>
+<verify-action-dialog ng-class="displayVerifyActionDialog"></verify-action-dialog>
+
 <div class="gallery-online-background">
-
 	<div class="gallery-online-content-div">
-		<img ng-src="{{mainImageUrl}}" alt="Some test photo" ng-click="clickImage()">
+		<img ng-src="{{mainImageUrl}}" alt="Some test photo">
 	</div>
-
 	<manage-block></manage-block>
-
-	<div class = "gallery-online-navigate-div">
-		<photo-review ng-repeat="val in [1,2,3,4,5,6,7,8]"></photo-review>
-	</div>
+	<photo-review></photo-review>
 </div>
 
 

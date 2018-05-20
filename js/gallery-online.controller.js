@@ -1,26 +1,27 @@
 'use strict';
 
 myApp.controller('GalleryOnlineController', function ($scope, $rootScope, $http) {
-	$rootScope.mainImageUrl = "http://www.rosphoto.com/images/u/articles/1510/4_8.jpg";
+	$rootScope.mainImageUrl = "";
+	$rootScope.mainImageName = "";
+	$rootScope.displayFileDialog = "";
 
-	$http.get("http://grazsite.000webhostapp.com/Server/ShowService.php").then(function(data) {
-		console.dir(data);
-	}, function(data) {
-		alert("ERROR - ShowService.php bad answer!");
-	});
+	$rootScope.addFileDialogOn = function() {
+		$rootScope.displayFileDialog = "gallery-online-div-block-on";
+  		$rootScope.backGround = "gallery-online-div-background-on";
+	};
+	$rootScope.addFileDialogOff = function() {
+		$rootScope.displayFileDialog = "gallery-online-div-block-off";
+  		$rootScope.backGround = "gallery-online-div-background-off";
+	};
+	$rootScope.verifyActionDialogOn = function() {
+		$rootScope.displayVerifyActionDialog = "gallery-online-div-block-verify-on";
+  		$rootScope.backGround = "gallery-online-div-background-on";
+	};
+	$rootScope.verifyActionDialogOff = function() {
+		$rootScope.displayVerifyActionDialog = "gallery-online-div-block-verify-off";
+  		$rootScope.backGround = "gallery-online-div-background-off";
+	};
 
-	/*
-	var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
-	var xhr = new XHR();
-	// (2) запрос на другой домен :)
-	xhr.open('GET', 'http://grazsite.000webhostapp.com/Server/ShowService.php', true);
-	xhr.onload = function(data) {
-	  console.dir(data);
-	}
-	xhr.onerror = function() {
-	  alert( 'Ошибка ' + this.status );
-	}
-	xhr.send();
-	*/
-
+	$rootScope.addFileDialogOff();
+	$rootScope.verifyActionDialogOff();
 });
