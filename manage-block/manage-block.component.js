@@ -10,5 +10,7 @@ angular.
       $scope.clickAdd = $rootScope.addFileDialogOn;
 
       $scope.clickDelete = $rootScope.verifyActionDialogOn;
+
+      $scope.clickRefresh = function() { location.reload(); };
     }
   });
