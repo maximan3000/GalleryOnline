@@ -1,6 +1,7 @@
 .add-file-dialog-back {
 	position: absolute;
-	width: 80%;
+	width: 95%;
+	margin: auto;
 	top: 40%;
 	z-index: 100;
 }
@@ -13,9 +14,11 @@
 	position: relative;
 	margin: auto;
 	padding: 5px;
+	align-items: center;
 }
 
 .add-file-dialog input {
+	display: block;
 	position: relative;
 	margin: auto;
 	width: inherit;

@@ -1,0 +1,27 @@
+As the practical part of the course, you will need to develop a meaningful example of a simple mobile WEB application. The system consists of a number of WEB services implemented by means of PHP scripting or JAVA servlet programming, and of a single page application implemented via HTML, CSS, JavaScript and two JavaScript frameworks (Angular and Cordova). The software package called XAMPP contains all packages needed to implement the back-end part of the project. For the Cordova installation, please consult the Cordova Tutorial.
+The example should include at least:
+
+3 REST WEB services returning JSON files.
+A single page application demonstrating a meaningful behaviour and implemented as a plain javascript or AngularJS application. The application must reuse the WEB services.
+A hybrid mobile application produced by means of the Cordova framework
+Thus, your work consists of:
+Installing Apache HTTP server, PHP support, NodeJS package and Cordova environment. Optionally, you may install the mySQL DBMS.
+Developing three Web services as PHP scripts. The scripts may load a database with data and retrieve data using SQL.
+Implementation of a number of files that constitute a single page application (HTML file, CSS file, JS files).
+
+Please remember, you have to upload a report consisting of 4 sections as follows:
+Description of the basic functionality of your application.
+Description of all Web services.
+Description of your single page application.
+Deploying the application instructions.
+
+Please remember you can only get the maximum number of points (20) if your report and examples match EXACTLY all the above requirements and your assignment demonstrates a meaningful functionality that is expected from a mobile Web application. Creating a working group
+You can develop the example in collaboration with colleagues. In other words, the example may be presented by a working group consisting of maximum 3 students.
+Packaging and presenting the results
+Thus, your results should consist of
+
+a written report (file "report.pdf")
+all the files that you implemented for your Web services (file "server.zip")
+all the files that you implemented for your front-end application (file "client.zip").
+installation file for a mobile device produced with Cordova (file "mobile.zip").
+All four files should be uploaded into your personal locker on the internet server.
