@@ -1,0 +1,10 @@
+Description of the basic functionality of your application.
+
+The basic functionality of the application is ...
+
+
+Description of all Web services.
+
+Description of your single page application.
+
+Deploying the application instructions.
