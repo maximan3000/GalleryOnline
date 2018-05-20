@@ -13,17 +13,18 @@ angular.
           var srcForm = document.getElementById("formFile");
           var formData = new FormData();
           formData.append('file', srcForm[0].files[0]);
+          $rootScope.addFileDialogOff();
 
          $http.post("https://grazsite.000webhostapp.com/php/AddService.php", formData, {
            transformRequest: angular.identity,
            headers: {'Content-Type': undefined,'Process-Data': false}
          })
          .then(function(data){
-            $rootScope.addFileDialogOff();
+            alert("Image has been uploaded!");
             location.reload();
          },
          function(){
-            console.log("Bad request to AddService.php");
+            alert("Bad request to AddService.php");
          });
 
         }
