@@ -7,7 +7,7 @@ angular.
     controller: function PhotoReviewController($scope, $rootScope, $http) {
       $scope.photoArr = [];
 
-      $http.get("http://grazsite.000webhostapp.com/Server/ShowService.php")
+      $http.get("php/ShowService.php")
         .then(function(data) {
           $scope.photoArr = data.data;
           $rootScope.mainImageUrl = $scope.photoArr[0].URL;

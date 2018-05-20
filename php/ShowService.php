@@ -4,7 +4,8 @@ $answer = array();
 $files=scandir($dir);
 foreach ($files as $key => $photoname){
     if($photoname!='.' && $photoname!='..') {
-        $answer[]=$dir.$photoname;
+        $file = array("URL" => "photo/".$photoname, "Name" => $photoname);
+        $answer[]=$file;
     };
 }
-return json_encode($answer);
+echo json_encode($answer);

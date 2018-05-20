@@ -8,27 +8,29 @@ angular.
       
 
       $scope.clickSubmit = function() {
+
       	if (""!=photoFile.value) {
+          var srcForm = document.getElementById("formFile");
           var formData = new FormData();
-          var data = photoFile.files[0];
-          formData.append('imageFile', data);
-          console.dir(formData);
+          formData.append('file', srcForm[0].files[0]);
 
+         $http.post("php/AddService.php", formData, {
+           transformRequest: angular.identity,
+           headers: {'Content-Type': undefined,'Process-Data': false}
+         })
+         .then(function(data){
+            console.dir(data);
+            $rootScope.addFileDialogOff();
+         },
+         function(){
+            console.log("Bad request to AddService.php");
+         });
 
-          /*TODO - пост запрос сдлеать чтоб работал*/
-          
-
-          $http.post(
-            "http://grazsite.000webhostapp.com/Server/AddService.php", 
-            data)
-            .then(function() {
-              $rootScope.addFileDialogOff();
-            }, function() {
-              alert("Bad request to AddService.php");
-            }
-          );  
         }
+
 	    };
+
+
 	    $scope.clickCancel = $rootScope.addFileDialogOff;
     }
   });
