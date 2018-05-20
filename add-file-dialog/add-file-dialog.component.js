@@ -19,8 +19,8 @@ angular.
            headers: {'Content-Type': undefined,'Process-Data': false}
          })
          .then(function(data){
-            console.dir(data);
             $rootScope.addFileDialogOff();
+            location.reload();
          },
          function(){
             console.log("Bad request to AddService.php");

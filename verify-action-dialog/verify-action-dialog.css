@@ -6,7 +6,7 @@
 	z-index: 100;
 }
 .verify-action-dialog {
-	width: 130px;
+	width: 100px;
 	border-radius: 5px;
 	position: relative;
 	display: block;
@@ -17,6 +17,7 @@
 	align-items: center;
 }
 .verify-action-dialog button {
+	margin-top: 5px;
 	display: inline-block;
 	position: relative;
 	margin-left: 5px;

@@ -9,7 +9,8 @@ angular.
           var toDelete = $rootScope.mainImageName;
           $http.get("https://grazsite.000webhostapp.com/php/DeleteService.php?filename="+toDelete)
               .then(function() {
-                      alert("Deleted!");
+                      //alert("Deleted!");
+                      location.reload();
                   },
                   function() {
                       alert("ERROR - ShowService.php bad answer!");
