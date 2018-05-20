@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="351bbc2f-49c3-4f30-9c08-7cad16e5b633" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/PhotoIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/PhotoIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo/cheburek.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/AddService.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/AddService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/DeleteService.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/DeleteService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add-file-dialog/add-file-dialog.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/add-file-dialog/add-file-dialog.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo-review/photo-review.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/photo-review/photo-review.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo/screen2.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/verify-action-dialog/verify-action-dialog.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/verify-action-dialog/verify-action-dialog.component.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="verify-action-dialog.component.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="verify-action-dialog.component.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/verify-action-dialog/verify-action-dialog.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="153">
+              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -38,8 +38,17 @@
       <file leaf-file-name="photo-review.component.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photo-review/photo-review.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="153">
+              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddService.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/AddService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -53,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-file-dialog.component.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="add-file-dialog.component.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/add-file-dialog/add-file-dialog.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="272">
+              <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -82,10 +91,10 @@
         <option value="$PROJECT_DIR$/php/AddService.php" />
         <option value="$PROJECT_DIR$/PhotoIndex.html" />
         <option value="$PROJECT_DIR$/php/DeleteService.php" />
-        <option value="$PROJECT_DIR$/photo-review/photo-review.component.js" />
         <option value="$PROJECT_DIR$/verify-action-dialog/verify-action-dialog.template.html" />
-        <option value="$PROJECT_DIR$/add-file-dialog/add-file-dialog.component.js" />
         <option value="$PROJECT_DIR$/verify-action-dialog/verify-action-dialog.component.js" />
+        <option value="$PROJECT_DIR$/photo-review/photo-review.component.js" />
+        <option value="$PROJECT_DIR$/add-file-dialog/add-file-dialog.component.js" />
       </list>
     </option>
   </component>
@@ -99,7 +108,7 @@
     <packageJsonPaths />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="793" />
     <option name="width" value="814" />
     <option name="height" value="867" />
@@ -172,15 +181,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526843102701</updated>
-      <workItem from="1526843105102" duration="3663000" />
+      <workItem from="1526843105102" duration="4833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3663000" />
+    <option name="totallyTimeSpent" value="4833000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -214,13 +223,6 @@
     <entry file="file://$PROJECT_DIR$/php/ShowService.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/AddService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PhotoIndex.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -235,13 +237,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add-file-dialog/add-file-dialog.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/verify-action-dialog/verify-action-dialog.template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -249,17 +244,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photo-review/photo-review.component.js">
+    <entry file="file://$PROJECT_DIR$/php/AddService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="153">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/verify-action-dialog/verify-action-dialog.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo-review/photo-review.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add-file-dialog/add-file-dialog.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
         </state>
       </provider>
     </entry>
