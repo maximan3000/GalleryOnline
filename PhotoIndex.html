@@ -4,20 +4,20 @@
     <title>Form for files</title>
 </head>
 
-<form action="AddService.php" method="post" enctype="multipart/form-data">
+<form action="php/AddService.php" method="post" enctype="multipart/form-data">
     <p>IMAGES TO LOAD:
         <input type="file" name="pictures[]" />
         <input type="submit" value="SEND" />
     </p>
 </form>
 <p>
-<form action="DeleteService.php" method="get">
+<form action="php/DeleteService.php" method="get">
     <p>NAME OF FILE TO DELETE:
         <input name="filename" type="text" />
         <input type="submit" value="SEND" />
     </p>
 </form>
-<form action="ShowService.php" method="post">
+<form action="php/ShowService.php" method="post">
     <p>FILES IN LIBRARY:
 
         <input type="submit" value="SHOW" />
