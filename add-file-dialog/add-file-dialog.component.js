@@ -20,8 +20,14 @@ angular.
            headers: {'Content-Type': undefined,'Process-Data': false}
          })
          .then(function(data){
+            /* cordova vibration */
+            if (typeof navigator.vibrate != "undefined") {
+              setTimeout(function() {location.reload();}, 750);
+              navigator.vibrate(250,250,250);
+            }
+
             alert("Image has been uploaded!");
-            location.reload();
+            //location.reload();
          },
          function(){
             alert("Bad request to AddService.php");
