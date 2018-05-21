@@ -11,11 +11,11 @@ angular.
               .then(function() {
                       /* cordova vibration */
                       if (typeof navigator.vibrate != "undefined") {
-                        setTimeout(function() {location.reload();}, 500);
                         navigator.vibrate(500);
                       }
                       //alert("Deleted!");
                       //location.reload();
+                      setTimeout(function() {location.reload();}, 500);
                       
                   },
                   function() {

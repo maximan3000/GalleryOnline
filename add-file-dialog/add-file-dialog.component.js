@@ -22,11 +22,16 @@ angular.
          .then(function(data){
             /* cordova vibration */
             if (typeof navigator.vibrate != "undefined") {
-              setTimeout(function() {location.reload();}, 750);
               navigator.vibrate(250,250,250);
             }
-
-            alert("Image has been uploaded!");
+            
+            setTimeout(function() {
+                alert("Image has been uploaded!"); 
+                location.reload();
+              }, 
+              750
+            );
+            
             //location.reload();
          },
          function(){
