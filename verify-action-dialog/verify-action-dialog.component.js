@@ -7,8 +7,9 @@ angular.
     controller: function AddFileDialogController($scope, $rootScope, $http) {
       $scope.clickVerify = function() {
           var toDelete = $rootScope.mainImageName;
-          $http.get("https://grazsite.000webhostapp.com/php/DeleteService.php?filename="+toDelete)
-              .then(function() {
+          $http.get("php/DeleteService.php?filename="+toDelete)
+              .then(function(data) {
+                  alert(data.data);
                       /* cordova vibration */
                       if (typeof navigator.vibrate != "undefined") {
                         navigator.vibrate(500);

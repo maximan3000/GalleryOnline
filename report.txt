@@ -1,10 +1,48 @@
 Description of the basic functionality of your application.
 
-The basic functionality of the application is ...
-
+The applicaion can:
+1)	get images from the server and then display them on the screen (browser or android device).
+2)	select image to display with its real proportions and greater resolution;
+3)	upload your own image to the server and as result display it on the screen;
+4)	delete selected image from the server. 
 
 Description of all Web services.
 
+The application has 3 web services:
+1)	ShowService.php
+	Return an array of all images that are located in the /photo directory. Output is:
+	[ 
+		{"URL" : "path-to-image1", "Name": "name-of-the-image1"},
+		{"URL" : "path-to-image2", "Name": "name-of-the-image2"},
+		...
+		{"URL" : "path-to-imageN", "Name": "name-of-the-imageN"}
+	]
+
+2)	AddService.php
+	Get a file from a POST query and save it into the /photo directory
+	Return json : [{true}] if operation is succesed or [{false}]
+
+3)	DeleteService.php
+	Get a GET query like {"filename": "name-of-the-file-to-delete"} and then delete file with that name from the /photo directory 
+	Return json : [{true}] if operation is succesed or [{false}]
+
 Description of your single page application.
 
+The single page application represents the gallery of photos. All photos are located on the server side and the application just shows them. The content of the application is aligned and scaled to the screen size and hold the great part of the screen.
+
+All images that server contains are displayes in the bottom part of the screen with horizontal alignement. The selected image is placed in the center and has its real proportions. You can select an image by clicking on its minifyed icon in the bottom part of the screen.
+
+If you want to sync with the server (renew all photos), to delete selected image or to add a new image you can click on one of management buttons that are under the selected image
+
+In the last: the adnroid device makes a vibration after adding (250ms) or deleting (500ms) image
+
 Deploying the application instructions.
+
+The site is available globally. Just type in the browser next address: https://grazsite.000webhostapp.com
+
+On your android device you only need to install gallery-online.apk
+
+If you want to deploy the site on your own server, you need to correct several pathes:
+1) verify-action-dialog/verify-action-dialog.component.js - correct path of the http request to the DeleteService.php
+2) photo-review/photo-review.component.js - correct path of the http request to the ShowService.php
+3) add-file-dialog/add-file-dialog.component.js - correct path of the http request to the AddService.php

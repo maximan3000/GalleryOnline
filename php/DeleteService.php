@@ -1,6 +1,10 @@
 <?php
+header('Content-type: json');
+header('Access-Control-Allow-Origin: *');
 $filename=$_GET["filename"];
-echo $filename;
- if (file_exists("../photo/$filename")) {
-     unlink("../photo/$filename");
- }
+$answer = false;
+if (file_exists("../photo/$filename")) {
+	$answer = unlink("../photo/$filename");
+}
+echo json_encode($answer);
+?>

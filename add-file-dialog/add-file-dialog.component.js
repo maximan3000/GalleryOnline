@@ -15,7 +15,7 @@ angular.
           formData.append('file', srcForm[0].files[0]);
           $rootScope.addFileDialogOff();
 
-         $http.post("https://grazsite.000webhostapp.com/php/AddService.php", formData, {
+         $http.post("php/AddService.php", formData, {
            transformRequest: angular.identity,
            headers: {'Content-Type': undefined,'Process-Data': false}
          })
