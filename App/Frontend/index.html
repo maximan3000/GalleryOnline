@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="galleryOnline">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes" />
+
+	<title>Gallery Online</title>
+
+	<link rel="stylesheet" type="text/css" href="css/gallery-online.css">
+	<link rel="stylesheet" type="text/css" href="angular-modules/manage-block/manage-block.css">
+	<link rel="stylesheet" type="text/css" href="angular-modules/photo-review/photo-review.css">
+	<link rel="stylesheet" type="text/css" href="angular-modules/add-file-dialog/add-file-dialog.css">
+	<link rel="stylesheet" type="text/css" href="angular-modules/verify-action-dialog/verify-action-dialog.css">
+
+	<script src="js/angular.min.js"></script>
+
+	<script src="angular-modules/manage-block/manage-block.module.js"></script>
+	<script src="angular-modules/manage-block/manage-block.component.js"></script>
+	<script src="angular-modules/add-file-dialog/add-file-dialog.module.js"></script>
+	<script src="angular-modules/add-file-dialog/add-file-dialog.component.js"></script>
+	<script src="angular-modules/verify-action-dialog/verify-action-dialog.module.js"></script>
+	<script src="angular-modules/verify-action-dialog/verify-action-dialog.component.js"></script>
+	<script src="angular-modules/photo-review/photo-review.module.js"></script>
+	<script src="angular-modules/photo-review/photo-review.component.js"></script>
+	<script src="js/gallery-online.module.js"></script>
+	<script src="js/gallery-online.controller.js"></script>
+	<script src="js/lazyload.js"></script>
+
+</head>
+<body ng-controller="GalleryOnlineController" onload="lazyload();">
+
+<div class="gallery-online-div-background" ng-class="backGround"></div>
+<add-file-dialog ng-class="displayFileDialog"></add-file-dialog>
+<verify-action-dialog ng-class="displayVerifyActionDialog"></verify-action-dialog>
+
+<div class="gallery-online-background">
+	<div id="mainImageContainer" class="gallery-online-content-div">
+		<img ng-src="{{mainImageUrl}}" alt="Some test photo">
+	</div>
+	<manage-block></manage-block>
+	<photo-review></photo-review>
+</div>
+
+</body>
+</html>
