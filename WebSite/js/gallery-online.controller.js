@@ -5,7 +5,7 @@ myApp.controller('GalleryOnlineController', function ($scope, $rootScope, $http)
 	$rootScope.mainImageName = "";
 	$rootScope.displayFileDialog = "";
 
-	var home = "http://localhost/myservers/GalleryOnline/App/Backend/services/";
+	var home = "http://localhost/App/services/";
 	$rootScope.addServiceUrl = home + "AddService.php";
 	$rootScope.deleteServiceUrl = home + "DeleteService.php";
 	$rootScope.showServiceUrl = home + "ShowService.php";

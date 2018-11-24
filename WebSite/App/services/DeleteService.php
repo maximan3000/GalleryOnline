@@ -1,5 +1,5 @@
 <?php
-require '../init.php';
+require 'App/init.php';
 
 header('Content-type: json');
 header('Access-Control-Allow-Origin: *');

@@ -1,7 +1,8 @@
 <div class = "photo-review-navigate-div" >
 	<div class="photo-review-navigate-div-container" >
 		<div ng-repeat="photo in photoArr" class="photo-review" >
-			<img class="lazyload" data-src="{{photo.minified}}" 
+			<!-- data-src="{{photo.minified}}" -->
+			<img class="lazyload" src="{{photo.minified}}" 
          width="50" height="50" alt="{{photo.name}}" ng-click="clickPhoto(photo.source, photo.name)" ></img>
 		</div>
 	</div>
