@@ -9,6 +9,7 @@ angular.
 
       $http.get($rootScope.showServiceUrl)
         .then(function(data) {
+          console.dir(data);
           $scope.photoArr = data.data;
           $rootScope.mainImageUrl = $scope.photoArr[0].source;
           $rootScope.mainImageName = $scope.photoArr[0].name;
