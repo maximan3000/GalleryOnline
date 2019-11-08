@@ -17,8 +17,7 @@
 
 ### Пример работы
 
-![PC Browser](readme/screen1.jpg)
-
-![Galaxy S5 adaptive](readme/screen2.jpg)
-
-![Galaxy S5 rotate adaptive](readme/screen3.jpg)
+| | |
+| --- | ---: |
+| ![PC Browser](readme/screen1.jpg) |
+| ![Galaxy S5 adaptive](readme/screen2.jpg) | ![Galaxy S5 rotate adaptive](readme/screen3.jpg) |
